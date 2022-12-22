@@ -4,8 +4,8 @@ import os
 
 import scrapy
 
-START_PAGE = os.getenv("START_PAGE")
-END_PAGE = os.getenv("END_PAGE")
+START_PAGE = int(os.getenv("START_PAGE"))
+END_PAGE = int(os.getenv("END_PAGE"))
 
 
 class QuoteSpider(scrapy.Spider):
